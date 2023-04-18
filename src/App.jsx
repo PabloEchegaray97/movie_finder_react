@@ -3,11 +3,11 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import MovieFinderContainer from './components/MovieFinderContainer'
-import Saludar from './components/Saludar'
+import Header from './components/Header'
 function App() {
   return (
     <div className="App">
-      <Saludar name="Pablo"></Saludar>
+      <Header></Header>
       <MovieFinderContainer></MovieFinderContainer>
     </div>
   )

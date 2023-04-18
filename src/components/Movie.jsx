@@ -1,10 +1,10 @@
 const Movie = ({movie}) => {
     return(
-        <div>
-            <img src= {movie.Poster}/>
-            <div>
+        <div className="movie">
+            <img className="movie-img" src= {movie.Poster}/>
+            <h5>
             {movie.Title} - {movie.Year}
-            </div>
+            </h5>
         </div>
     )
 }

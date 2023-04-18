@@ -20,12 +20,15 @@ const MovieFinderContainer = () => {
     
     return (
         <div>
-            <h1>Movie finder</h1>
-            <label htmlFor="title">Título</label>
+            <div className="form-container">
+            <label htmlFor="title">Buscar título</label>
             <input id="title" onChange={titleOnChangeHandler} value={title} />
+            </div>
+            <div className='results'>
             {movies.map((movie) => (
                 <Movie movie={movie} key={movie.imdbID} />
             ))}
+            </div>
         </div>
     )
 }
