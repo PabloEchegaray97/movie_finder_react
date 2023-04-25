@@ -18,7 +18,7 @@ const MovieFinderContainer = () => {
         }
     }
     useEffect(() => {
-        fetch(`https://www.omdbapi.com/?apikey=a8f52dc1&s=${title}&page=${page}`)
+        fetch(`https://www.omdbapi.com/?apikey=a8f52dc1&s=${title}&page=${page}&plot=full`)
             .then((res) => res.json())
             .then((resmovies) => {
                 if (resmovies.Search) {
