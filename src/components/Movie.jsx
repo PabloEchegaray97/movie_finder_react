@@ -1,11 +1,16 @@
 const Movie = ({movie}) => {
+   
     return(
-        <div className="movie">
-            <img className="movie-img" src= {movie.Poster}/>
+        <>
+            {movie.Poster !=="N/A" && (
+                <div className="movie">
+                <img className="movie-img" src= {movie.Poster}/>
             <h5>
             {movie.Title} - {movie.Year}
             </h5>
-        </div>
+            </div>
+            )}
+        </>
     )
 }
 export default Movie;
